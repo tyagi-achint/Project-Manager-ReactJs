@@ -30,7 +30,7 @@
 }
 
 #SelectedProject div button:hover {
-  color: rgb(12 10 9);
+  color: rgb(239 68 68);
 }
 
 #SelectedProject header p.date {
@@ -40,4 +40,8 @@
 #SelectedProject header p.description {
   white-space: pre-wrap;
   color: rgb(87 83 78);
+  height: 100px;
+  overflow-y: auto;
+  background-color: rgb(245 245 244);
+  padding: 0.5rem;
 }

@@ -4,9 +4,13 @@ export default function Sidebar({
   projects,
   onSelectProject,
   selectedProjectId,
+  goHome,
 }) {
   return (
     <aside>
+      <button className="btn" onClick={goHome}>
+        Home
+      </button>
       <h2>Your Projects</h2>
       <div>
         <button className="btn" onClick={addProject}>

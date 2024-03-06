@@ -1,19 +1,32 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Home from "./Home/Home.jsx";
 import NewProject from "./NewProject/NewProject.jsx";
 import Sidebar from "./Sidebar/Sidebar.jsx";
 import SelectedProject from "./SelectedProject/SelectedProject.jsx";
 
 export default function App() {
-  const [addProject, setAddProject] = useState({
+  const initialState = JSON.parse(
+    localStorage.getItem("project-track-manager")
+  ) || {
     projects: [],
     pageState: undefined,
     tasks: [],
-  });
+  };
+  const [addProject, setAddProject] = useState(initialState);
+
+  useEffect(() => {
+    localStorage.setItem("project-track-manager", JSON.stringify(addProject));
+  }, [addProject]);
 
   function handleSelectProject(id) {
     setAddProject((pervState) => {
       return { ...pervState, pageState: id };
+    });
+  }
+
+  function handleGoHome() {
+    setAddProject((pervState) => {
+      return { ...pervState, pageState: undefined };
     });
   }
 
@@ -108,6 +121,7 @@ export default function App() {
         projects={addProject.projects}
         onSelectProject={handleSelectProject}
         selectedProjectId={addProject.pageState}
+        goHome={handleGoHome}
       />
       {content}
     </main>
