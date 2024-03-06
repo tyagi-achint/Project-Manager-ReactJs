@@ -1,0 +1,28 @@
+#Home {
+  margin-top: 6rem;
+  width: 66.666667%;
+  text-align: center;
+}
+
+#Home img {
+  object-fit: contain;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+}
+
+#Home h2 {
+  margin: 1rem 0;
+  color: rgb(120 113 108);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+#Home p {
+  color: rgb(168 162 158);
+  margin-bottom: 1rem;
+}
+
+#Home span {
+  margin-top: 2rem;
+}

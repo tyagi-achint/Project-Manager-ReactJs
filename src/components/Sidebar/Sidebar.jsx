@@ -1,9 +1,12 @@
-export default function Sidebar() {
+import "./Sidebar.css";
+export default function Sidebar({ addProject }) {
   return (
     <aside>
       <h2>Your Projects</h2>
       <div>
-        <button>+ Add Project</button>
+        <button className="btn" onClick={addProject}>
+          + Add Project
+        </button>
       </div>
       <ul>
         <li>1</li>

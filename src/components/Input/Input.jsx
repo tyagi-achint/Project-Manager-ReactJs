@@ -1,3 +1,5 @@
+import "./Input.css";
+
 export default function Input({ label, textArea, ...props }) {
   return (
     <p id="inputPara">

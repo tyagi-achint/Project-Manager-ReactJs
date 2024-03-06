@@ -1,0 +1,35 @@
+#inputPara {
+  display: flex;
+  margin: 1rem 0;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+#inputPara label {
+  color: rgb(120 113 108);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#inputPara input,
+#inputPara textarea {
+  padding: 0.25rem;
+  border-radius: 0.125rem;
+  border-width: 0 0 2px 0;
+  width: 100%;
+  background-color: rgb(231 229 228);
+  color: rgb(87 83 78);
+  border-color: rgb(214 211 209);
+  outline: none;
+}
+#inputPara textarea {
+  width: 100% !important;
+  height: 60px;
+}
+
+#inputPara input:focus,
+#inputPara textarea:focus {
+  outline: none;
+  border-color: rgb(87 83 78);
+}

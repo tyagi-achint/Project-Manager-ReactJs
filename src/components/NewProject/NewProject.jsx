@@ -1,4 +1,5 @@
-import Input from "./Input";
+import Input from "../Input/Input";
+import "./NewProject.css";
 export default function NewProject() {
   return (
     <div id="NewProject">

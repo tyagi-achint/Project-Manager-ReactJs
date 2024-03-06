@@ -14,30 +14,7 @@ button {
   cursor: pointer;
 }
 
-main {
-  height: 100vh;
-  margin: 2rem 0;
-  display: flex;
-  gap: 2rem;
-}
-
-aside {
-  width: 33.33%;
-  padding: 4rem 2rem;
-  background-color: rgb(28 25 23);
-  color: rgb(250 250 249);
-  border-top-right-radius: 0.75rem;
-  border-bottom-right-radius: 0.75rem;
-}
-
-aside h2 {
-  margin-bottom: 2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: rgb(231 229 228);
-}
-
-aside button {
+button.btn {
   padding: 0.5rem 1rem;
   border: none;
   background-color: rgb(68 64 60);
@@ -47,90 +24,20 @@ aside button {
   color: rgb(168 162 158);
 }
 
-aside button:hover {
+button.btn:hover {
   color: rgb(245 245 244);
   background-color: rgb(87 83 78);
 }
 
-#NewProject {
-  margin-top: 4rem;
-  width: 35rem;
-}
-
-#NewProject menu {
+main {
+  height: 100vh;
+  margin: 2rem 0;
   display: flex;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  gap: 1rem;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-#NewProject button.saveBtn {
-  padding: 0.5rem 1.5rem;
-  border-radius: 0.375rem;
-  color: rgb(250 250 249);
-  border: none;
-  background-color: rgb(41 37 36);
-}
-#NewProject button.saveBtn:hover {
-  background-color: rgb(12 10 9);
-}
-
-#NewProject button.cancleBtn {
-  color: rgb(41 37 36);
-  border: none;
-  background-color: transparent;
-}
-#NewProject button.cancleBtn:hover {
-  color: rgb(12 10 9);
-}
-
-#inputPara {
-  display: flex;
-  margin: 1rem 0;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-#inputPara label {
-  color: rgb(120 113 108);
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-#inputPara input,
-#inputPara textarea {
-  padding: 0.25rem;
-  border-radius: 0.125rem;
-  border-width: 0 0 2px 0;
-  width: 100%;
-  background-color: rgb(231 229 228);
-  color: rgb(87 83 78);
-  border-color: rgb(214 211 209);
-  outline: none;
-}
-#inputPara textarea {
-  width: 100% !important;
-  height: 60px;
-}
-
-#inputPara input:focus,
-#inputPara textarea:focus {
-  outline: none;
-  border-color: rgb(87 83 78);
+  gap: 2rem;
 }
 
 @media screen and (min-width: 768px) {
-  aside {
-    width: 18rem;
-  }
-  aside h2 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-  aside button {
+  button.btn {
     font-size: 1rem;
     line-height: 1.5rem;
   }
