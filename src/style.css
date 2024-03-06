@@ -1,10 +1,11 @@
 html {
-  background-color: rgb(245 245 244);
+  background-color: rgb(241 241 241);
 }
 body {
   margin: 0 auto;
   padding: 0;
   max-width: 1400px;
+  font-family: system-ui;
 }
 
 li {

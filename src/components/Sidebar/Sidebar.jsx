@@ -1,5 +1,5 @@
 import "./Sidebar.css";
-export default function Sidebar({ addProject }) {
+export default function Sidebar({ addProject, projects }) {
   return (
     <aside>
       <h2>Your Projects</h2>
@@ -9,10 +9,11 @@ export default function Sidebar({ addProject }) {
         </button>
       </div>
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
+        {projects.map((project) => (
+          <li key={project.id}>
+            <button className="projectName">{project.title}</button>
+          </li>
+        ))}
       </ul>
     </aside>
   );

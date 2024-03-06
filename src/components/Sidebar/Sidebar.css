@@ -14,6 +14,24 @@ aside h2 {
   color: rgb(231 229 228);
 }
 
+aside button.projectName {
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0;
+  border: none;
+  border-radius: 0.125rem;
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  color: rgb(168 162 158);
+}
+aside ul {
+  margin-top: 2rem;
+}
+aside button.projectName:hover {
+  color: rgb(231 229 228);
+  background-color: rgb(41 37 36);
+}
+
 @media screen and (min-width: 768px) {
   aside {
     width: 18rem;
