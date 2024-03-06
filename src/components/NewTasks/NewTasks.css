@@ -1,0 +1,24 @@
+#NewTasks {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+#NewTasks input {
+  padding: 0.25rem 0.5rem;
+
+  border: none;
+  background-color: rgb(231 229 228);
+  border-radius: 0.125rem;
+  width: 16rem;
+}
+#NewTasks button {
+  background-color: transparent;
+  color: rgb(68 64 60);
+  border: 1px solid rgb(68 64 60);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+#NewTasks button:hover {
+  color: rgb(12 10 9);
+  border-color: rgb(12 10 9);
+}
