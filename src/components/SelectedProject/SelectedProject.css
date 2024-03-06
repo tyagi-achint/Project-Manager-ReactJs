@@ -1,0 +1,43 @@
+#SelectedProject {
+  width: 35rem;
+  margin-top: 4rem;
+}
+
+#SelectedProject header {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid;
+  border-color: rgb(214 211 209);
+}
+#SelectedProject header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#SelectedProject div h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: rgb(87 83 78);
+}
+
+#SelectedProject div button {
+  color: rgb(87 83 78);
+  border: none;
+  background-color: transparent;
+}
+
+#SelectedProject div button:hover {
+  color: rgb(12 10 9);
+}
+
+#SelectedProject header p.date {
+  margin-bottom: 1rem;
+  color: rgb(168 162 158);
+}
+#SelectedProject header p.description {
+  white-space: pre-wrap;
+  color: rgb(87 83 78);
+}

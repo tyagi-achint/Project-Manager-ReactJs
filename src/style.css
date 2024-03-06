@@ -37,6 +37,22 @@ main {
   gap: 2rem;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @media screen and (min-width: 768px) {
   button.btn {
     font-size: 1rem;

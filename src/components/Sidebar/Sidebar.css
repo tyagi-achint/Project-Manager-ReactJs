@@ -21,15 +21,24 @@ aside button.projectName {
   border-radius: 0.125rem;
   width: 100%;
   text-align: left;
-  background-color: transparent;
-  color: rgb(168 162 158);
 }
+
 aside ul {
   margin-top: 2rem;
 }
-aside button.projectName:hover {
+aside ul button:hover {
   color: rgb(231 229 228);
   background-color: rgb(41 37 36);
+}
+
+aside .activeProject {
+  color: rgb(231 229 228);
+  background-color: rgb(41 37 36);
+}
+
+aside .notActiveProject {
+  color: rgb(168 162 158);
+  background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
